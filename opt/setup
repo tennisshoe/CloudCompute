@@ -1,10 +1,10 @@
  #! /bin/bash
 
 # screen useful to attach to server process
-sudo apt install screen
+sudo apt install screen -y
 
 # java 17 required for minecraft 18
-sudo apt install openjdk-17-jre-headless
+sudo apt install openjdk-17-jre-headless -y
 
 # get latest release version of minecraft server
 mc_version_manifest_url="https://launchermeta.mojang.com/mc/game/version_manifest.json"
@@ -15,4 +15,5 @@ wget $mc_url -P ../bin
 sudo chmod +x restart
 
 # open the minecraft port
+sudo apt install ufw -y
 sudo ufw allow 25565
