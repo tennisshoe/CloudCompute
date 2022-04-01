@@ -1,5 +1,4 @@
 steps:
 - name: 'gcr.io/cloud-builders/git'
   entrypoint: 'git'
-  args: ['clone', 'https://github.com/tennisshoe/CloudCompute']
-  dir: 'minecraft'
+  args: ['clone', 'https://github.com/tennisshoe/CloudCompute', 'minecraft']
