@@ -1,4 +1,4 @@
 steps:
 - name: 'gcr.io/cloud-builders/git'
   entrypoint: 'git'
-  args: ['clone', 'https://source.cloud.google.com/corded-smithy-345818/github_tennisshoe_cloudcompute/+/master']
+  args: ['clone', 'https://github.com/tennisshoe/CloudCompute']
