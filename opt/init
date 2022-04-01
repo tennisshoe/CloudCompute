@@ -1,3 +1,5 @@
  #! /bin/bash
- 
- # do nothing for now
+sudo apt update
+
+sudo chmod +x setup
+

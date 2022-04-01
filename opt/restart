@@ -1,0 +1,15 @@
+ #! /bin/bash
+
+# first shut down existing processes
+
+# make sure there was enough time
+echo "starting sleep"
+sleep 10
+echo "finished sleep"
+
+# find out how much memory we now have, convert to megabytes
+freeMem=awk '/MemFree/ { printf "%.3f \n", $2/1024 }' /proc/meminfo
+
+# start minecraft using screen
+screen $(-dmS minecraft ./java -Xms$freeMemM -$freeMemM -jar bin/server.jar nogui)
+
