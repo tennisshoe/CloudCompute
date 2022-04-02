@@ -1,4 +1,5 @@
 # need to get git installed first
+# and config user for git
 
 steps:
 - name: 'gcr.io/cloud-builders/git'
