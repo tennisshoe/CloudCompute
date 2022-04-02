@@ -2,4 +2,4 @@
 sudo apt upgrade -y
 
 sudo chmod +x setup
-
+sudo chmod +x restart
