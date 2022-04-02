@@ -1,3 +1,5 @@
+# need to get git installed first
+
 steps:
 - name: 'gcr.io/cloud-builders/git'
   entrypoint: 'git'
